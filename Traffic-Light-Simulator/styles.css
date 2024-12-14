@@ -1,0 +1,126 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #1c1c1c;
+    color: #e8e8e8;
+}
+
+/* Header style */
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Container for light and message columns */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Style for lights and message columns */
+.lights-column,
+.messages-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the lights column */
+.lights-column {
+    border: 7px dashed white;
+    padding: 15px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+/* Style for paragraph spacing in messages column */
+.messages-column p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Basic style for light circles */
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #444;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Style for red light */
+.red {
+    background-color: #660000;
+}
+
+/* Style for yellow light */
+.yellow {
+    background-color: #665500;
+}
+
+/* Style for green light */
+.green {
+    background-color: #004d00;
+}
+
+/* Active red light with glow effect */
+.active.red {
+    background-color: red;
+    box-shadow: 0 0 20px red, 0 0 40px red;
+}
+
+/* Active yellow light with glow effect */
+.active.yellow {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow, 0 0 40px yellow;
+}
+
+/* Active green light with glow effect */
+.active.green {
+    background-color: green;
+    box-shadow: 0 0 20px green, 0 0 40px green;
+}
+
+/* Style for message text */
+.message {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e8e8e8;
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+/* Active message visibility */
+.active-message {
+    opacity: 1;
+    color: inherit;
+}
+
+/* Style for the next button */
+#next-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e8e8e8;
+    background-color: #444;
+    border: 2px solid #666;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}

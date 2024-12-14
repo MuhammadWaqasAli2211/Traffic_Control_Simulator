@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Traffic Light Simulator</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Traffic Light Simulator</h1>
+
+    <!-- Container for both lights and messages -->
+    <div class="container">
+
+        <!-- Column for traffic light indicators -->
+        <div class="lights-column">
+            <div class="light red" id="red"></div>
+            <div class="light yellow" id="yellow"></div>
+            <div class="light green" id="green"></div>
+        </div>
+
+        <!-- Column for message text -->
+        <div class="messages-column">
+            <p id="red-message" class="message">STOP</p>
+            <p id="yellow-message" class="message">READY</p>
+            <p id="green-message" class="message">GO</p>
+        </div>
+    </div>
+
+    <!-- Button to switch the lights -->
+    <button id="next-btn">Next</button>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
